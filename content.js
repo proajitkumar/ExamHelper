@@ -15,6 +15,7 @@ let cleanData = (content) => {
   content = content.replace(copyAllBtnTitle, "");
   content = content.replace(copiedBtnTitle, "");
   content = content.replace(/([a-d]\.)\n/g, "$1 ");
+  content = content.replace(/Question \d+\nAnswer\n/g, '')
   content = content + "\n\n";
   return content;
 };
