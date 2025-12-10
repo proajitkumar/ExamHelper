@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Div Text (Single Site)",
+  "version": "1.0",
+  "description": "Adds copy button only on one site",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.npmjs.com/*",
+        "https://amigo.amityonline.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
